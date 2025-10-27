@@ -1,0 +1,167 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  
+
+body{
+  height: 100%;
+  background-color: #000000;
+}
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html body{
+    
+    height: 100%;
+    width: 100%;
+
+  }
+
+  @font-face {
+    font-family: kajiro;
+    src: url(/kajiro/kajiro/Kajiro/Kajiro\ Bold.ttf);
+  }
+  #main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+  }
+   #back{
+    width: 100%;
+    height: 100vh;
+    
+  }
+   #top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  #working{
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    width: 80%;
+    max-width: 1920px;
+    /* background-color: rgb(136, 138, 138); */
+  }
+
+  #nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav img
+  {
+    width: 80px;
+     padding: 10px 20px;
+     border-radius: 50%;
+  }
+#left ,#right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+  #nav a{
+    color: #fff;
+   
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  font-style: normal;
+    text-decoration: none;
+    /* font-size: 1rem; */
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+  #hero{
+    position: absolute;
+    top: 30%;
+    left: 0;
+     display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+  }
+
+  #hero-left{
+
+    /* position: absolute; */
+   max-width: 50%;
+
+   
+  }
+  #hero-right{
+color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   width: 20%;
+   gap: 20px;
+    
+   /* background-color: rgb(102, 255, 42); */
+  }
+
+  #hero-left #elem{
+    overflow: hidden;
+    height: 10vw;
+    /* background-color: red; */
+  }
+#hero-left #elem h1{
+  color: #fff;
+  font-family: kajiro;
+  font-size: 10vw;
+  font-weight: 200;
+}
+
+#hero-left button{
+  padding: .8vw 3vw;
+  font-family: kajiro;
+  font-size: 3vw;
+}
+#hero-right p{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+#hero-right #img{
+  /* background-color: rgb(219, 32, 32); */
+  width: 100%;
+  height: 170px;
+  /* margin-top: 10px; */
+  /* margin-right: 8px; */
+}
+  #img img{
+   width: 100%;
+   height: 100%;
+
+  }
+
+#back img{
+ width: 100%;
+ height: 100%;
+}
+
+#back {
+  position: fixed; /* keeps it fixed on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* behind everything */
+  overflow: hidden;
+}
+
+#top {
+  position: relative;
+  z-index: 10; /* above the background */
+}
